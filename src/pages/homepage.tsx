@@ -24,10 +24,12 @@ export function Homepage(){
             </div>
 
           </div>
+
           <div>
             <h1>adssd</h1>
             <h1>bb</h1>
           </div>
+          
           <img src="https://i.pinimg.com/564x/43/bf/c1/43bfc1a6bfe8ce2a933cc3bdcdee45d4.jpg" className="w-[1920px]"/>
         </div>
       </div>
