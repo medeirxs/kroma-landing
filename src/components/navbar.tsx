@@ -2,7 +2,7 @@ import { Button } from "./ui/button";
 
 export function NavBar(){
   return(
-    <div className="fixed z-10 flex item-center h-32 justify-center w-screen bg-gradient-to-b from-black/70">
+    <div className="fixed z-10 flex item-center h-32 justify-center w-screen bg-gradient-to-b from-black/90">
       <div className="mt-3 w-[1024px] h-12 flex justify-between items-center p-3 backdrop-blur-md rounded-2xl border border-white/20">
 
         {/*Kroma Logo and NavBar Title*/}

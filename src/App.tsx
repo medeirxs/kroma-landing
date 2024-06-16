@@ -1,7 +1,6 @@
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { NavBar } from "@/components/navbar"
 import { Separator } from "./components/ui/separator"
-import { Button } from "./components/ui/button"
 
 export function App() {
   return (
