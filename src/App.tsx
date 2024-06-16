@@ -1,11 +1,17 @@
 import { ThemeProvider } from "@/components/providers/theme-provider"
 import { RouterProvider } from "react-router-dom"
+
+import { Helmet, HelmetProvider } from "react-helmet-async"
+
 import { router } from "./routes"
 
 export function App() {
   return (
     <>
-      <RouterProvider router={router}/>
+      <HelmetProvider>
+        <Helmet titleTemplate="Kroma | %s"/>
+        <RouterProvider router={router}/>
+      </HelmetProvider>
       <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme" children={undefined}/>
     </>
   )

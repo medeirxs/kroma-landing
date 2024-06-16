@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import { Separator } from "@/components/ui/separator";
 
 export function Homepage(){
@@ -7,7 +8,7 @@ export function Homepage(){
         <div>
           <div className="flex flex-col justify-center items-center w-screen h-full drop-shadow-lg z-0">
 
-            <h1 className="text-5xl font-bold">Tudo que voce precisa</h1>
+            <h1 className="text-5xl font-bold">Tudo que você precisa</h1>
             <h1 className="text-5xl font-bold"> em um lugar só.</h1>
 
             <p className="text-sm text-muted-foreground">Feito por designers, para designers.</p>
@@ -31,6 +32,7 @@ export function Homepage(){
         </div>
       </div>
 
+      <Helmet title='Tudo que você precisa em um lugar só.'/>
     </>
   )
 }
