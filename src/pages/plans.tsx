@@ -1,11 +1,14 @@
 import { Button } from '@/components/ui/button'
+import { DialogTrigger } from '@/components/ui/dialog'
 import { Footer } from '@/components/ui/footer'
 
 import { Separator } from '@/components/ui/separator'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
+import { Dialog, DialogContent } from '@/components/ui/dialog'
 import { Helmet } from 'react-helmet-async'
 
 import { VscVerifiedFilled } from "react-icons/vsc"
+import { FaCcMastercard, FaCcVisa } from "react-icons/fa"
 
 export function Plans(){
   return(
@@ -55,7 +58,53 @@ export function Plans(){
 
                 </div>
 
-                <Button className='w-full hover:bg-zinc-900' variant='secondary'>Adquirir</Button>
+                <Dialog>
+                  <DialogTrigger>
+                    <Button className='w-full hover:bg-zinc-900' variant='secondary'>Adquirir</Button>
+                  </DialogTrigger>
+                  <DialogContent className='h-96'>
+                    <div className='flex gap-5 w-full justify-center'>
+                      <div className='w-48 flex flex-col justify-around items-center'>
+
+                        <div className='flex items-center flex-col'>
+                          <h1 className='text-2xl tracking-tighter font-bold'>Kroma The One</h1>
+                          <p className='text-xs text-muted-foreground'>Pagamento via cartão de </p>
+                          <p className='text-xs text-muted-foreground'>crédito ou débito.</p>
+
+                          <div className='flex gap-2 mt-2'>
+                            <FaCcMastercard className='w-6 h-6'/>
+                            <FaCcVisa className='w-6 h-6'/>
+                          </div>
+                        </div>
+
+                        <div className='flex items-center flex-col'>
+                          <a href="https://buy.stripe.com/00g00M8Mq0oF77y6oo">
+                            <Button className='mt-2 hover:bg-zinc-400'>Assinar Plano</Button>
+                          </a>
+
+                          <p className='mt-2 text-xs text-muted-foreground'>Pagamento Único</p>
+                        </div>
+                      </div>
+                      <Separator orientation='vertical'/>
+                      <div className='w-48 flex justify-center'>
+                        <div className='flex items-center justify-around flex-col gap-2'>
+                          <div className='w-44 h-44'>
+                            <img src="https://lh3.google.com/u/1/d/1osfocCyZKG5-T-gqTzM1Avuly5G04umA=w1084-h902-iv1"/>
+                          </div>
+                          <div className='text-xs text-muted-foreground flex flex-col items-center justify-center '>
+                            <p>Chave Pix</p>
+                            <div className='text-white p-2 bg-white/10 rounded-lg mt-2'>kromaproducer@gmail.com</div>
+                            <div className='mt-1 flex items-center flex-col'>
+                              <p>Após efetuar o pagamento</p>
+                              <p>envie o comprovante para o</p>
+                              <p>e-mail da chave.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
 
 
@@ -113,7 +162,53 @@ export function Plans(){
 
                 </div>
 
-                <Button className='w-full hover:bg-zinc-400'>Adquirir</Button>
+                <Dialog>
+                  <DialogTrigger>
+                    <Button className='w-full hover:bg-zinc-400'>Adquirir</Button>
+                  </DialogTrigger>
+                  <DialogContent className='h-96'>
+                    <div className='flex gap-5 w-full justify-center'>
+                      <div className='w-48 flex flex-col justify-around items-center'>
+
+                        <div className='flex items-center flex-col'>
+                          <h1 className='text-2xl tracking-tighter font-bold'>All For One</h1>
+                          <p className='text-xs text-muted-foreground'>Pagamento via cartão de </p>
+                          <p className='text-xs text-muted-foreground'>crédito ou débito.</p>
+
+                          <div className='flex gap-2 mt-2'>
+                            <FaCcMastercard className='w-6 h-6'/>
+                            <FaCcVisa className='w-6 h-6'/>
+                          </div>
+                        </div>
+
+                        <div className='flex items-center flex-col'>
+                          <a href="https://buy.stripe.com/5kAbJue6K5IZfE49AB">
+                            <Button className='mt-2 hover:bg-zinc-400'>Assinar Plano</Button>
+                          </a>
+
+                          <p className='mt-2 text-xs text-muted-foreground'>Pagamento Único</p>
+                        </div>
+                      </div>
+                      <Separator orientation='vertical'/>
+                      <div className='w-48 flex justify-center'>
+                        <div className='flex items-center justify-around flex-col gap-2'>
+                          <div className='w-44 h-44'>
+                            <img src="https://lh3.google.com/u/1/d/1iHL1IC7xMv1fOlOyOterjY8hZ4sxha63=w1084-h902-iv1"/>
+                          </div>
+                          <div className='text-xs text-muted-foreground flex flex-col items-center justify-center '>
+                            <p>Chave Pix</p>
+                            <div className='text-white p-2 bg-white/10 rounded-lg mt-2'>kromaproducer@gmail.com</div>
+                            <div className='mt-1 flex items-center flex-col'>
+                              <p>Após efetuar o pagamento</p>
+                              <p>envie o comprovante para o</p>
+                              <p>e-mail da chave.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
 
 
@@ -156,7 +251,53 @@ export function Plans(){
 
                 </div>
 
-                <Button className='w-full hover:bg-zinc-900' variant='secondary'>Adquirir</Button>
+                <Dialog>
+                  <DialogTrigger>
+                    <Button className='w-full hover:bg-zinc-900' variant='secondary'>Adquirir</Button>
+                  </DialogTrigger>
+                  <DialogContent className='h-96'>
+                    <div className='flex gap-5 w-full justify-center'>
+                      <div className='w-48 flex flex-col justify-around items-center'>
+
+                        <div className='flex items-center flex-col'>
+                          <h1 className='text-2xl tracking-tighter font-bold'>Classic</h1>
+                          <p className='text-xs text-muted-foreground'>Pagamento via cartão de </p>
+                          <p className='text-xs text-muted-foreground'>crédito ou débito.</p>
+
+                          <div className='flex gap-2 mt-2'>
+                            <FaCcMastercard className='w-6 h-6'/>
+                            <FaCcVisa className='w-6 h-6'/>
+                          </div>
+                        </div>
+
+                        <div className='flex items-center flex-col'>
+                          <a href="https://buy.stripe.com/bIY8xie6K3AR8bC5km">
+                            <Button className='mt-2 hover:bg-zinc-400'>Assinar Plano</Button>
+                          </a>
+
+                          <p className='mt-2 text-xs text-muted-foreground'>Pagamento Único</p>
+                        </div>
+                      </div>
+                      <Separator orientation='vertical'/>
+                      <div className='w-48 flex justify-center'>
+                        <div className='flex items-center justify-around flex-col gap-2'>
+                          <div className='w-44 h-44'>
+                            <img src="https://lh3.google.com/u/1/d/1EqQuiJGzj3fD7Eob2QhK3QLgS8NrsWfl=w1659-h1008-iv1"/>
+                          </div>
+                          <div className='text-xs text-muted-foreground flex flex-col items-center justify-center '>
+                            <p>Chave Pix</p>
+                            <div className='text-white p-2 bg-white/10 rounded-lg mt-2'>kromaproducer@gmail.com</div>
+                            <div className='mt-1 flex items-center flex-col'>
+                              <p>Após efetuar o pagamento</p>
+                              <p>envie o comprovante para o</p>
+                              <p>e-mail da chave.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </DialogContent>
+                </Dialog>
               </div>
             </div>
           </div>

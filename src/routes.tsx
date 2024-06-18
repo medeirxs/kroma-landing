@@ -8,7 +8,6 @@ import { Plans } from "./pages/plans";
 import { Changelogs } from "./pages/changelogs";
 import { Creators } from "./pages/creators";
 import { FAQ } from "./pages/FAQ";
-import { AfterPay } from "./pages/payment-sucessfull";
 
 export const router = createBrowserRouter([
   {
@@ -21,7 +20,6 @@ export const router = createBrowserRouter([
       { path: '/changelogs', element: <Changelogs /> },
       { path: '/creators', element: <Creators /> },
       { path: '/faq', element: <FAQ /> },
-      { path: '/checkout-sucessfull', element: <AfterPay /> },
     ],
   },
 ])
