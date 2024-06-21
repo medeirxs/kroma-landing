@@ -1,4 +1,6 @@
 import { Helmet } from "react-helmet-async"
+
+import { Footer } from "@/components/ui/footer"
 import {
   Carousel,
   CarouselContent,
@@ -15,7 +17,6 @@ import { FaBoxOpen } from "react-icons/fa"
 import { PiGridFourFill } from "react-icons/pi"
 import { BiSolidZap } from "react-icons/bi"
 import { FaHeart } from "react-icons/fa"
-import { Footer } from "@/components/ui/footer"
 
 export function KromaTheOne(){
   return(
